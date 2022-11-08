@@ -5,7 +5,8 @@ using PushDemo.Services;
 
 namespace PushDemo.Droid.Services
 {
-    [Service]
+    [Service(
+     Exported = true)]
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     public class PushNotificationFirebaseMessagingService : FirebaseMessagingService
     {

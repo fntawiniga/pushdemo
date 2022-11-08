@@ -15,6 +15,7 @@ namespace PushDemo.Droid
      LaunchMode = LaunchMode.SingleTop,
      Icon = "@mipmap/icon",
      Theme = "@style/MainTheme",
+     Exported = true,
      MainLauncher = true,
      ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity, Android.Gms.Tasks.IOnSuccessListener
